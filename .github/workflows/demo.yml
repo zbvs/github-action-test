@@ -30,4 +30,3 @@ jobs:
           distribution: adopt
       - name: run gradle build
         run: gradle build
-        
