@@ -27,3 +27,8 @@ tasks.withType<KotlinCompile> {
 application {
     mainClass.set("MainKt")
 }
+
+println("++++++++++++++++++++++++++++++++++++++++++++++++")
+println("[gradle executed!!!]")
+println("input tasks name: ${project.gradle.startParameter.taskNames}")
+println("++++++++++++++++++++++++++++++++++++++++++++++++")
